@@ -2,3 +2,8 @@
 
 - [Prime Numbers from 1 to 100](./prime_1_100.cpp)
 - [Quadratic solver](./qudratic_solver.cpp)
+
+# How to run
+```shell
+g++ <filename>.cpp && ./a
+```
