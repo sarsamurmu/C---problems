@@ -3,13 +3,16 @@
 using namespace std;
 
 void merge_sort(int arr[], int start, int size);
-void print_arr(const char *label, int arr[], int size);
 
 int main() {
   const int size = 20;
-  int numbers[size] = {19, 18, 1, 9, 16, 5, 3, 13, 8, 2, 12, 11, 4, 6, 14, 10, 17, 15, 7, 20};
-  merge_sort(numbers, 0, size);
-  print_arr("Final", numbers, size);
+  int arr[size] = {19, 18, 1, 9, 16, 5, 3, 13, 8, 2, 12, 11, 4, 6, 14, 10, 17, 15, 7, 20};
+
+  merge_sort(arr, 0, size);
+
+  for (int i = 0; i < size; i++) {
+    cout << arr[i] << ",";
+  }
   return 0;
 }
 
@@ -54,13 +57,4 @@ void merge_sort(int arr[], int start, int size) {
   }
 
   delete sorted;
-}
-
-void print_arr(const char *label, int arr[], int size) {
-  cout << label << ": [";
-  for (int i = 0; i < size; i++) {
-    if (i > 0) cout << ", ";
-    cout << arr[i];
-  }
-  cout << "]";
 }

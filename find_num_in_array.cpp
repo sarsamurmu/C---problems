@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
   int arr[6] = {10, 5, 6, 1, 20, 19};
   int n;
   bool does_exist = false;

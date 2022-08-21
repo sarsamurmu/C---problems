@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
   int a, b, r;
 
   cout << "Enter the numbers (separated by space): ";
@@ -22,8 +21,7 @@ int main()
     big = b;
   }
 
-  do
-  {
+  do {
     r = big % small;
     if (r == 0)
       cout << "GCD is " << small;
