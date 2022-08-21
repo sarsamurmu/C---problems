@@ -5,7 +5,7 @@ using namespace std;
 int main() {
   int until;
 
-  cout << endl << "Determine all prime numbers until _ ";
+  cout << endl << "Determine all prime numbers until: ";
   cin >> until;
 
   for (int i = 2; i <= until; i = i + 1) {

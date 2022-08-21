@@ -12,15 +12,15 @@ int main() {
 
   cout << "a = " << a << "; b = " << b << "; c = " << c << endl;
 
-  float determinant = sqrtf(pow(b, 2) - 4 * a * c);
+  float discriminant = sqrtf(pow(b, 2) - 4 * a * c);
 
-  if (determinant < 0) {
+  if (discriminant < 0) {
     cout << "The solutions of x are imaginary" << endl;
     return 0;
   }
 
-  float sol_1 = (-b + determinant) / (2 * a);
-  float sol_2 = (-b - determinant) / (2 * a);
+  float sol_1 = (-b + discriminant) / (2 * a);
+  float sol_2 = (-b - discriminant) / (2 * a);
 
   cout << "The solutions are x = " << sol_1 << ", x = " << sol_2 << endl;
 
